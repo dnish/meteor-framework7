@@ -1,1 +1,1 @@
-Framework 7 combined with Meteor
+Framework7 combined with Meteor
