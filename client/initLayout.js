@@ -1,5 +1,6 @@
 myApp = null;
 $$ = Dom7;
+dynPopup = new ReactiveVar(null);
 
 
 initLayout = function()
@@ -36,4 +37,29 @@ Meteor.startup(function() {
         in: "transition.fadeIn",
         out: "transition.fadeOut"
     });
+
+
+    //Cordova back button functionality
+    document.addEventListener("backbutton", function (e) {
+
+        e.preventDefault();
+        var elem = popupIsOpen();
+        var elemPhoto = photoOpen();
+
+
+        if (elemPhoto) {
+
+            myPhotoBrowser.close();
+
+        }
+        else if (elem) {
+            myApp.closeModal("#" + elem.attr('id'));
+        }
+        else {
+            window.history.back();
+        }
+
+
+    });
+
 });

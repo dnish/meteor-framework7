@@ -21,3 +21,5 @@ insecure                # Allow all DB writes from clients (for prototyping)
 nobutakaoshiro:framework7-ios-material
 iron:router
 ccorcos:transitioner
+reactive-var
+random
