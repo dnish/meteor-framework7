@@ -1,1 +1,1 @@
-This is a Meteor + Framework7 example, just for beginners. If you need a more extended version, check out this fork: https://github.com/daveeel/meteor-framework7
+This is a Meteor + Framework7 example, just for beginners. If you need a more extended version, check out this fork: https://github.com/daveeel/meteor7
